@@ -1,9 +1,8 @@
 
 public class PersonagemGame{
 
-    int saudeAtual;
+    public int saudeAtual;
 
-    String nome;
-
+    public String nome;
 
 }
