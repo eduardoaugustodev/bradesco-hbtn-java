@@ -22,14 +22,11 @@ public class PersonagemGame{
     }
 
     public void tomarDano(int quantidadeDeDano){
-        if(getSaudeAtual() > 0){
-            setSaudeAtual(getSaudeAtual() - quantidadeDeDano);
-        }
+        setSaudeAtual(Math.max(0, getSaudeAtual() - quantidadeDeDano));
+
     }
 
     public void receberCura(int quantidadeDeCura){
-        if(getSaudeAtual() < 100){
-            setSaudeAtual(getSaudeAtual() + quantidadeDeCura);
-        }
+        setSaudeAtual(Math.min(100, getSaudeAtual() + quantidadeDeCura));
     }
 }
