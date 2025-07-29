@@ -12,12 +12,12 @@ public class PersonagemGame{
     }
 
     public void setSaudeAtual(int saudeAtual) {
-        if(saudeAtual > 0){
+        this.saudeAtual = saudeAtual;
+        if(getSaudeAtual() > 0){
             this.status = "vivo"
         }else{
             this.status = "morto"
         }
-        this.saudeAtual = saudeAtual;
     }
 
     public String getNome() {
