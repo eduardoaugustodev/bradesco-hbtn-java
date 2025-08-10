@@ -1,3 +1,6 @@
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+
 public class Program {
     public static void main(String[] args) {
         Quadrado quadrado = new Quadrado();
@@ -19,6 +22,7 @@ public class Program {
             System.out.printf("Campo largura eh %s\n", Modifier.toString(modifierLargura));
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
+
         }
 
         System.out.printf("Lado: %.2f\n", quadrado.getLado());
