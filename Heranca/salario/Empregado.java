@@ -10,8 +10,11 @@ public class Empregado {
     }
 
     public double calcularBonus(Departamento departamento) {
-        // Implementação padrão: sem bônus
-        return 0.0;
+        if (departamento.alcancouMeta()) {
+            return salarioFixo * 0.1;
+        } else {
+            return 0.0;
+        }
     }
 
     public double calcularSalarioTotal(Departamento departamento) {
