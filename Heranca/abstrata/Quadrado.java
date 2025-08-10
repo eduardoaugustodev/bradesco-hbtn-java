@@ -1,12 +1,10 @@
-public class Quadrado extends FormaGeometrica {
-    private double lado;
-
+public class Quadrado extends Retangulo {
     public Quadrado(double lado) {
-        this.lado = lado;
+        super(lado, lado);
     }
 
     @Override
     public double area() {
-        return lado * lado;
+        return largura * altura;
     }
 }
